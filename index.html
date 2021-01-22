@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>БАРБЕРШОП</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Colors CSS -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+</head>
+<body class="barber_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="cube-wrapper">
+		  <div class="cube-folding">
+			<span class="leaf1"></span>
+			<span class="leaf2"></span>
+			<span class="leaf3"></span>
+			<span class="leaf4"></span>
+		  </div>
+		  <span class="loading" data-name="Loading">Барбершоп</span>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    <div id="wrapper">
+
+        <!-- Sidebar-wrapper -->
+        <div id="sidebar-wrapper">
+			<div class="side-top">
+                <ul class="sidebar-nav">
+					<li><a class="active" href="index.html">Главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="barbers.html">Наша команда</a></li>
+				</ul>
+			</div>
+        </div>
+        <!-- End Sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <a href="#menu-toggle" class="menuopener" id="menu-toggle"><i class="fa fa-bars"></i></a>
+			
+            <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4" style="background-image:url('uploads/barber_slider.jpg');">
+                <div class="container-fluid">
+                    <div class="row">
+						<div id="full-width" class="owl-carousel owl-theme">
+							<div class="text-center item">
+								<div class="col-md-8 col-md-offset-2 col-sm-12">
+									<div class="big-tagline text-center">
+										<h2><strong>БАРБЕРШОП</strong><br>
+										в Самаре</h2>
+										<p class="lead">Мы ждем именно тебя!</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end section -->
+
+            <div class="section wb">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <div class="message-box">
+                                <h4>Обо мне</h4>
+                                <h2>Добро пожаловать на мой сайт</h2>
+                                <p class="lead">Меня зовут Крючкина Александра и я учусь в группе ПИ-31.</p>
+                                <a href="1.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                <img src="1.jpg" alt="" class="img-responsive img-rounded">
+                                
+                                </div><!-- end messagebox -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+					
+                    <hr class="hr1"> 
+                    <img src="uploads/3.jpg ">
+                    <hr class="hr1">
+
+
+
+
+            
+
+            <div class="copyrights">
+                <div class="container-fluid">
+                    <div class="footer-distributed">
+                        <div class="footer-left">
+                            <p class="footer-links">
+                                <a href="index.html">Главная</a>
+                                <a href="about.html">О нас</a>
+                                <a href="services.html">Услуги</a>
+                                <a href="barbers.html">Наша команда</a>
+                            </p>
+                            <p class="footer-company-name">Александра Крючкина. &copy; 2021. https://www.imi-samara.ru/</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+
+    <script src="js/all.js"></script>
+	<script src="js/responsive-tabs.js"></script>
+
+    <script src="js/custom.js"></script>
+
+
+    <script>
+    (function($) {
+        "use strict";
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+        smoothScroll.init({
+            selector: '[data-scroll]',
+            selectorHeader: null, 
+            speed: 500, 
+            easing: 'easeInOutCubic', 
+            offset: 0, 
+            callback: function ( anchor, toggle ) {} 
+        });
+    })(jQuery);
+    </script>
+
+</body>
+</html>
